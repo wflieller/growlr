@@ -1,0 +1,14 @@
+.growl{
+
+	background-image: url("../images/growler-64oz-3x-logo4.png");
+	background-repeat: no-repeat;
+	height: 19em;
+	width: 18em;
+}
+
+.formPosition{
+
+	position: relative;
+	top: 11em;
+	left: 5em;
+}
