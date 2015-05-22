@@ -2,20 +2,20 @@
 
 ENV['RACK_ENV'] = 'test'
 
-require File.join(File.dirname(__FILE__), '..', '..', 'lib/chitter.rb')
+require File.join(File.dirname(__FILE__), '..', '..', 'lib/growler.rb')
 
 require 'capybara'
 require 'capybara/cucumber'
 require 'rspec'
 
-Capybara.app = Chitter
+Capybara.app = Growler
 
-class ChitterWorld
+class GrowlerWorld
   include Capybara::DSL
   include RSpec::Expectations
   include RSpec::Matchers
 end
 
 World do
-  ChitterWorld.new
+  GrowlerWorld.new
 end
