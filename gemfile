@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
-
-gem 'sinatra'
-gem 'sinatra-contrib'
+  gem 'sinatra'
+group :development, :test do
+  gem 'cucumber-sinatra'
+  gem 'rspec'
+  gem 'capybara' 
+  gem 'shotgun'
+end
